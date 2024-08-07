@@ -8,6 +8,7 @@ opt.encoding = 'utf-8'                 --Кодировка
 opt.showcmd = true                     --Отображение команд
 opt.swapfile = false                   --Не создаем свап файлы
 opt.clipboard:append('unnamedplus')    --Общий буфер
+opt.scrolloff = 10
 
 ------------------------------------------------------------
 -- ВИЗУАЛЬНЫЕ ОПЦИИ
@@ -21,7 +22,8 @@ opt.shiftwidth = 4           --Смещаем на 4 пробела
 opt.foldcolumn = '2'         --Ширина колонки для фолдов
 opt.colorcolumn =  '119'     --Расположение цветной колонки
 opt.cursorline = true        -- Подсветка строки с курсором
-opt.termguicolors = true
+opt.termguicolors = false
+vim.cmd 'colorscheme catppuccin-mocha'
 
 -----------------------------------------------------------
 -- НАСТРОЙКИ ПОИСКА
