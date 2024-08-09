@@ -22,7 +22,7 @@ opt.shiftwidth = 4           --Смещаем на 4 пробела
 opt.foldcolumn = '2'         --Ширина колонки для фолдов
 opt.colorcolumn =  '119'     --Расположение цветной колонки
 opt.cursorline = true        -- Подсветка строки с курсором
-opt.termguicolors = false
+opt.termguicolors = true
 vim.cmd 'colorscheme catppuccin-mocha'
 
 -----------------------------------------------------------

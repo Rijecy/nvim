@@ -20,6 +20,7 @@ return {
 	wk.add({
   		{ "<leader>f", group = "file" }, -- group
 		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find File", mode = "n" },
+		{ "<leader>ft", "<cmd>NvimTreeToggle<cr>", desc = "Toggle NvimTree", mode = "n" },
 		{
     		mode = { "n", "v" }, -- NORMAL and VISUAL mode
 		    { "<leader>q", "<cmd>q<cr>", desc = "Quit" }, -- no need to specify mode since it's inherited
