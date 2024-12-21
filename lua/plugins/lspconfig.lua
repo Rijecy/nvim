@@ -37,13 +37,22 @@ return {
   				Lua = {}
 			}
 		}
-			require('lspconfig').intelephense.setup{}
-			require('lspconfig').clangd.setup{}
-			require('lspconfig').tsserver.setup{}
-			require('lspconfig').angularls.setup{}
-			require('lspconfig').emmet_language_server.setup{}
-			require('lspconfig').cssls.setup{}
-			require('lspconfig').html.setup{}
+			require'lspconfig'.rust_analyzer.setup{
+			  settings = {
+				['rust-analyzer'] = {
+				  diagnostics = {
+					enable = false;
+				  }
+				}
+			  }
+			}
+			-- require('lspconfig').intelephense.setup{}
+			-- require('lspconfig').clangd.setup{}
+	-- 		require('lspconfig').tsserver.setup{}
+	-- 		require('lspconfig').angularls.setup{}
+	-- 		require('lspconfig').emmet_language_server.setup{}
+	-- 		require('lspconfig').cssls.setup{}
+	-- 		require('lspconfig').html.setup{}
 	end,
 },
 }
